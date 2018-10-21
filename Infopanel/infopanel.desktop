@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=InfoPanel
+Comment=
+Exec=lxterminal --command=/home/pi/Documents/Infopanel/infopanel.py
+StartupNotify=false
+Terminal=false
+Hidden=false
+Icon=screensaver
