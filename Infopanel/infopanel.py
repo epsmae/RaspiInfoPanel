@@ -44,29 +44,34 @@ def print_supprocesses():
 	display_info("child pid: " + str(child.pid))
 
 def check_presentation():
-    directoryList = os.listdir(MEDIA_EXTERNAL_SOURCE)
+    
+    try:
+       directoryList = os.listdir(MEDIA_EXTERNAL_SOURCE)
 
-    if not directoryList:
-        display_info("No USB device found")
-    else:
-       display_info("Following devices found: " + "\n".join(directoryList))
+       if not directoryList:
+          display_info("No USB device found")
+       else:
+          display_info("Following devices found: " + "\n".join(directoryList))
          
-    for sub_directory in directoryList:
-        path = os.path.join(MEDIA_EXTERNAL_SOURCE, sub_directory)
-        presentation = os.path.join(path, MEDIA_SOURCE)
-        if os.path.exists(presentation):
-            if os.path.exists(MEDIA_SOURCE_PATH) and filecmp.cmp(presentation, MEDIA_SOURCE_PATH):
+       for sub_directory in directoryList:
+          path = os.path.join(MEDIA_EXTERNAL_SOURCE, sub_directory)
+          presentation = os.path.join(path, MEDIA_SOURCE)
+          if os.path.exists(presentation):
+             if os.path.exists(MEDIA_SOURCE_PATH) and filecmp.cmp(presentation, MEDIA_SOURCE_PATH):
                 display_info("Same presentation do not copy")
-            else:
+             else:
                 display_info("Try copy file " + presentation + ' to ' + MEDIA_SOURCE_PATH + "...")
                 try:
-                    #copyfile(presentation, dest_directory)  
-                    copyfile(presentation, MEDIA_SOURCE_PATH)               
-                    display_info("...successful")
+                   #copyfile(presentation, dest_directory)  
+                   copyfile(presentation, MEDIA_SOURCE_PATH)               
+                   display_info("...successful")
                 except:
-                    display_info("...failed" + sys.exc_info()[0])
-        else:
-            display_info("No " + MEDIA_SOURCE + " file available in: " + path)
+                   display_info("...failed" + sys.exc_info()[0])
+          else:
+             display_info("No " + MEDIA_SOURCE + " file available in: " + path)
+    
+    except:
+       display_info("failed to check presentation")
     return
 
 def callback_start(channel):
@@ -142,8 +147,8 @@ GPIO.add_event_detect(15, GPIO.FALLING, callback=callback_stop, bouncetime=BOUNC
 display_info("Initialize complete")
 
 # wait till raspi boot is complete and all usb devices detected
-display_info("Starting in 10s...")
-sleep(10)
+display_info("Starting in 20s...")
+sleep(20)
 
 check_presentation()
 
