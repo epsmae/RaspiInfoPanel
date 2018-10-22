@@ -7,6 +7,11 @@ Video control is available over the keyboard or gpio's.
 
 Uses a modified version from the raspberry hello_video example.
 
+
+## Tutorial
+
+[Raspberry Infopanel Tutorial](https://www.my-tech-projects.com/raspberry-infopanel/)
+
 ## Convert Videos
 ### Convert images to .h264 video
 ```sh
