@@ -18,6 +18,8 @@ copy /y "..\Develop\infopanel.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\printer.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\usb_updater.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\web_updater.py" %OUTPUT_DIRECTORY%
+copy /y "..\Develop\update_server.txt" %OUTPUT_DIRECTORY%
+copy /y "..\Develop\product_name.txt" %OUTPUT_DIRECTORY%
 
 
 
