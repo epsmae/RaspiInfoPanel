@@ -48,13 +48,8 @@ def update_available(external_source_folder, source_file_name):
     info = VersionInfo()
 
     try:
-        directory_list = os.listdir(external_source_folder)
-
-        if not directory_list:
-            display_info("No USB device found")
-            return info
-        else:
-            display_info("Following devices found: " + "\n".join(directory_list))
+        directory_list = list(filter(lambda x: os.path.isdir(os.path.join(external_source_folder, x)), os.listdir(external_source_folder)))
+        directory_list.append(external_source_folder)
 
         for sub_directory in directory_list:
             path = os.path.join(external_source_folder, sub_directory)
@@ -63,6 +58,7 @@ def update_available(external_source_folder, source_file_name):
                 info.success = True
                 info.file_path = presentation
                 info.creation_date = datetime.datetime.fromtimestamp(os.path.getmtime(presentation))
+                return info
 
     except Exception as ex:
         display_info("failed to check for usb update: " + str(ex))
