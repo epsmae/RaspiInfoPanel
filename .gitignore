@@ -125,3 +125,4 @@ venv.bak/
 .mypy_cache/
 
 Deploy/InfoPanel.zip
+Develop/Download/
