@@ -126,15 +126,10 @@ def check_for_update(zip_extract_folder):
     result = VersionInfo()
 
     try:
-        display_info("remove temporary data")
-
-        zip_file_path = zip_extract_folder + "/" + "infopanel.zip"
         version_info_path = zip_extract_folder + "/" + "available_versions.json"
 
         # remove if there is some temporary data
-        remove(zip_file_path)
         remove(version_info_path)
-        remove(zip_extract_folder)
 
         if not os.path.exists(zip_extract_folder):
             os.makedirs(zip_extract_folder)
@@ -203,23 +198,18 @@ def check_for_update(zip_extract_folder):
 def download_update(zip_extract_folder, info):
     result = VersionInfo()
 
-    display_info("remove temporary data")
-
     zip_file_path = os.path.join(zip_extract_folder, "infopanel.zip")
     if not os.path.exists(zip_extract_folder):
         os.makedirs(zip_extract_folder)
 
     try:
-
         # remove if there is some temporary data
         remove(zip_file_path)
 
         if not os.path.exists(zip_extract_folder):
             os.makedirs(zip_extract_folder)
 
-        display_info("do update")
         display_info("dowloading zip")
-
         file_request = get_request(info.file_path, info.user_name, info.password)
 
         if file_request.status_code != 200:
@@ -233,9 +223,9 @@ def download_update(zip_extract_folder, info):
         zip_ref = zipfile.ZipFile(zip_file_path, 'r')
         for zi in zip_ref.infolist():
             zip_ref.extract(zi, zip_extract_folder)
-            date_time = time.mktime(zi.date_time + (0, 0, -1))
+            result.creation_date = time.mktime(zi.date_time + (0, 0, -1))
             result.file_path = os.path.join(zip_extract_folder, zi.filename)
-            os.utime(result.file_path, (date_time, date_time))
+            os.utime(result.file_path, (result.creation_date, result.creation_date))
         zip_ref.close()
 
         result.success = True
