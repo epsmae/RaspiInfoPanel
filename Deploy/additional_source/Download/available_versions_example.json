@@ -1,0 +1,14 @@
+{
+  "product": {
+    "myProduct1": {
+      "Version": "1.1",
+      "Datum": "2018-10-22T20:15:39.286506",
+      "Url": "https://my-update-domain.com/infopanel_myProduct1.zip"
+    },
+    "myProduct2": {
+      "Version": "1.5",
+      "Datum": "2018-12-26T20:15:39.286506",
+      "Url": "https://my-update-domain.com/infopanel_myProduct2.zip"
+    }
+  }
+}
