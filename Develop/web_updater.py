@@ -223,9 +223,13 @@ def download_update(zip_extract_folder, info):
         zip_ref = zipfile.ZipFile(zip_file_path, 'r')
         for zi in zip_ref.infolist():
             zip_ref.extract(zi, zip_extract_folder)
-            result.creation_date = time.mktime(zi.date_time + (0, 0, -1))
+            date_time = time.mktime(zi.date_time + (0, 0, -1))
             result.file_path = os.path.join(zip_extract_folder, zi.filename)
-            os.utime(result.file_path, (result.creation_date, result.creation_date))
+            os.utime(result.file_path, (date_time, date_time))
+            result.creation_date = datetime.datetime.fromtimestamp(os.path.getmtime(result.file_path)).isoformat()
+            display_info("path: " + str(result.file_path))
+            display_info("date time: " + str(result.creation_date))
+
         zip_ref.close()
 
         result.success = True
@@ -233,6 +237,6 @@ def download_update(zip_extract_folder, info):
         display_info("extracted zip")
 
     except Exception as ex:
-        display_info("failed to check for usb update: " + str(ex))
+        display_info("failed to check for web update: " + str(ex))
 
     return result

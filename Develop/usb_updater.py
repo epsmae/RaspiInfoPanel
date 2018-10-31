@@ -57,7 +57,7 @@ def update_available(external_source_folder, source_file_name):
             if os.path.exists(presentation):
                 info.success = True
                 info.file_path = presentation
-                info.creation_date = datetime.datetime.fromtimestamp(os.path.getmtime(presentation))
+                info.creation_date = datetime.datetime.fromtimestamp(os.path.getmtime(presentation)).isoformat()
                 return info
 
     except Exception as ex:

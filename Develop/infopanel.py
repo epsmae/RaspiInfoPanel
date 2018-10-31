@@ -80,8 +80,8 @@ def callback_copy(channel):
 def is_update_required(remote_date):
     try:
         date = datetime.datetime.fromtimestamp(os.path.getmtime(MEDIA_SOURCE_PATH)).isoformat()
-        display_info("local date: " + date)
-        display_info("remote date: " + remote_date)
+        display_info("local date: " + str(date))
+        display_info("remote date: " + str(remote_date))
 
         return remote_date > date
     except Exception as ex:
@@ -100,6 +100,11 @@ def check_for_web_update():
             if res.success:
                 display_info("update download successful")
                 copyfile(res.file_path, MEDIA_SOURCE_PATH)
+
+                display_info("setting time to: " + str(res.creation_date))
+                date_time_obj = datetime.datetime.strptime(res.creation_date, '%Y-%m-%dT%H:%M:%S')
+                time_obj = time.mktime(date_time_obj.timetuple())
+                os.utime(MEDIA_SOURCE_PATH, (time_obj, time_obj))
                 display_info("replaced video file")
             else:
                 display_info("update download failed")
@@ -117,6 +122,14 @@ def check_for_usb_update():
         if res.success and is_update_required(res.creation_date):
             display_info("...update required")
             copyfile(res.file_path, MEDIA_SOURCE_PATH)
+            # display_info("setting time to: " + res.creation_date)
+            # os.utime(MEDIA_SOURCE_PATH, (res.creation_date, res.creation_date))
+
+            display_info("setting time to: " + str(res.creation_date))
+            date_time_obj = datetime.datetime.strptime(res.creation_date, '%Y-%m-%dT%H:%M:%S')
+            time_obj = time.mktime(date_time_obj.timetuple())
+            os.utime(MEDIA_SOURCE_PATH, (time_obj, time_obj))
+            display_info("replaced video file")
         else:
             display_info("...no update required")
     except Exception as ex:
