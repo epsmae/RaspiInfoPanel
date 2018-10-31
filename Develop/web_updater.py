@@ -180,10 +180,10 @@ def check_for_update(zip_extract_folder):
         display_info("url: " + video_url)
         json_data.close()
 
-        date_time_obj = datetime.datetime.strptime(version_date, '%Y-%m-%dT%H:%M:%S.%f')
-        display_info("remote video iso time: " + date_time_obj.isoformat())
+        date_time_obj = datetime.datetime.strptime(version_date, '%Y-%m-%dT%H:%M:%S').isoformat()
+        display_info("remote video iso time: " + date_time_obj)
 
-        result.creation_date = date_time_obj.isoformat()
+        result.creation_date = date_time_obj
         result.file_path = video_url
         result.user_name = username
         result.password = password

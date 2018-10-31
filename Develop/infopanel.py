@@ -43,6 +43,8 @@ def getch():
 
 def callback_start(channel):
     global running
+    # delay start a bit as otherwise the player can hang!
+    sleep(5)
     display_info("Start detected")
     running = True
 
