@@ -79,7 +79,10 @@ def callback_copy(channel):
 
 def is_update_required(remote_date):
     try:
-        date = os.path.getmtime(MEDIA_SOURCE_PATH)
+        date = datetime.datetime.fromtimestamp(os.path.getmtime(MEDIA_SOURCE_PATH)).isoformat()
+        display_info("local date: " + date)
+        display_info("remote date: " + remote_date)
+
         return remote_date > date
     except Exception as ex:
         display_info("failed to check if upate required: " + str(ex))
