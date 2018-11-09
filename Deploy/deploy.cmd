@@ -2,9 +2,8 @@
 @echo off
 
 
-set OUTPUT_DIRECTORY="InfoPanel"
+set OUTPUT_DIRECTORY="Infopanel"
 
-set PWD=%cd%
 
 REM create folder
 if not exist %OUTPUT_DIRECTORY% mkdir %OUTPUT_DIRECTORY%
@@ -20,26 +19,15 @@ copy /y "..\Develop\usb_updater.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\web_updater.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\update_server.txt" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\product_name.txt" %OUTPUT_DIRECTORY%
+copy /y "..\Develop\infopanel.desktop" %OUTPUT_DIRECTORY%
+copy /y "..\Develop\infopanel_auto_startup.sh" %OUTPUT_DIRECTORY%
 
 
 
 call powershell.exe -Command "Copy-item -Force -Recurse -Verbose additional_source\* -Destination %OUTPUT_DIRECTORY%"
 
-REM get version name
-REM call powershell.exe -Command "[System.Reflection.Assembly]::LoadFrom('..\..\Develop\VisuTrend.App\bin\Release\VisuTrend.App.exe').GetName().Version.ToString();" > out.tmp
-REM set /p VERSION=< out.tmp
-REM del /Q out.tmp
-
-REM SET VERSION=%VERSION:.=_%
-
-REM echo Version: %Version%
-
-REM cd %OUTPUT_DIRECTORY%
-
 REM Create zip file with 7zip
 "C:\Program Files\7-Zip\7z.exe" a "InfoPanel.zip" ./%OUTPUT_DIRECTORY%
-
-REM cd %PWD%
 
 
 rmdir /S /Q %OUTPUT_DIRECTORY%

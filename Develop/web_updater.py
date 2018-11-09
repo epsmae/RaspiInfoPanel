@@ -190,7 +190,7 @@ def check_for_update(zip_extract_folder):
         result.success = True
 
     except Exception as ex:
-        display_info("failed to check for usb update: " + str(ex))
+        display_info("failed to check for web update: " + str(ex))
 
     return result
 
