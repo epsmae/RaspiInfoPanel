@@ -3,7 +3,7 @@ Encoding=UTF-8
 Type=Application
 Name=InfoPanel
 Comment=
-Exec=lxterminal --command=/home/pi/Documents/Infopanel/infopanel.py
+Exec=lxterminal --command=/home/pi/Documents/Infopanel/infopanel_auto_startup.sh
 StartupNotify=false
 Terminal=false
 Hidden=false

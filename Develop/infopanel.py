@@ -22,7 +22,7 @@ VIDEO_PLAYER_BINARIES = '/home/pi/Documents/Infopanel/hello_pi/hello_video/hello
 MEDIA_EXTERNAL_SOURCE = '/media/pi'
 MEDIA_SOURCE = 'infopanel.h264'
 MEDIA_SOURCE_PATH = '/home/pi/Documents/Infopanel/video_source/' + MEDIA_SOURCE
-ZIP_EXTRACT_FOLDER = "Download";
+ZIP_EXTRACT_FOLDER = "Download"
 DOWNLOAD_SOURCE_PATH = '/home/pi/Documents/Infopanel/' + ZIP_EXTRACT_FOLDER + '/' + MEDIA_SOURCE
 
 BOUNCE_TIME = 400

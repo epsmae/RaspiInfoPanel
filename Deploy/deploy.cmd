@@ -20,6 +20,7 @@ copy /y "..\Develop\web_updater.py" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\update_server.txt" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\product_name.txt" %OUTPUT_DIRECTORY%
 copy /y "..\Develop\infopanel.desktop" %OUTPUT_DIRECTORY%
+copy /y "..\Develop\infopanel_auto_startup.sh" %OUTPUT_DIRECTORY%
 
 
 

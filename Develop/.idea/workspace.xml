@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2da3af1c-b91d-4a17-9cc0-264373ef4a68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWebUpdater.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestWebUpdater.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infopanel.py" beforeDir="false" afterPath="$PROJECT_DIR$/infopanel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printer.py" beforeDir="false" afterPath="$PROJECT_DIR$/printer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_name.txt" beforeDir="false" afterPath="$PROJECT_DIR$/product_name.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/update_server.txt" beforeDir="false" afterPath="$PROJECT_DIR$/update_server.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_updater.py" afterDir="false" />
@@ -47,7 +50,7 @@
     <session id="-862944653">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="2" />
@@ -55,22 +58,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="300" />
+          <entry key="py" value="1886" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="300" />
+          <entry key="Python" value="1886" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="5" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -78,9 +83,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CommonTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/printer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="51" column="43" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <marker date="1541089716866" expanded="true" signature="155:156" ph="..." />
+                <marker date="1541089716866" expanded="true" signature="307:308" ph="..." />
+                <marker date="1541089716866" expanded="true" signature="822:823" ph="..." />
+                <marker date="1541089716866" expanded="true" signature="978:979" ph="..." />
+                <marker date="1541089716866" expanded="true" signature="1451:1634" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestUsbUptdaer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="52">
               <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -92,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestWebUpdater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="408">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -104,26 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_updater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1897">
-              <caret line="228" column="66" selection-start-line="228" selection-start-column="53" selection-end-line="228" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/infopanel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/usb_updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="59" column="34" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="1263">
+              <caret line="228" column="32" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -131,17 +159,46 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10047">
-              <caret line="604" selection-start-line="604" selection-end-line="604" />
+            <state relative-caret-position="221">
+              <caret line="609" column="29" lean-forward="true" selection-start-line="609" selection-start-column="29" selection-end-line="609" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/infopanel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2888">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#23#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usb_updater.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="62" column="27" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>failed</find>
+      <find>joi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,16 +208,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TestUsbUptdaer.py" />
-        <option value="$PROJECT_DIR$/TestWebUpdater.py" />
         <option value="$PROJECT_DIR$/usb_updater.py" />
         <option value="$PROJECT_DIR$/web_updater.py" />
+        <option value="$PROJECT_DIR$/TestWebUpdater.py" />
+        <option value="$PROJECT_DIR$/Common.py" />
+        <option value="$PROJECT_DIR$/CommonTest.py" />
+        <option value="$PROJECT_DIR$/printer.py" />
         <option value="$PROJECT_DIR$/infopanel.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="205" />
-    <option name="width" value="3650" />
+    <option name="x" value="-15" />
+    <option name="width" value="1948" />
     <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -201,8 +261,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for TestUsbUptdaer.MyTestCase">
-    <configuration name="Unittests for TestUsbUptdaer.MyTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for CommonTest.MyTestCase.test_utc">
+    <configuration name="Unittests for CommonTest.MyTestCase.test_read_write_string_date" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Develop" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,7 +272,35 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestUsbUptdaer.MyTestCase&quot;" />
+      <option name="_new_target" value="&quot;CommonTest.MyTestCase.test_read_write_string_date&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for CommonTest.MyTestCase.test_utc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Develop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;CommonTest.MyTestCase.test_utc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for CommonTest.MyTestCase.test_utc_time" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Develop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;CommonTest.MyTestCase.test_utc_time&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -230,20 +318,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for TestWebUpdater.MyTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Develop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestWebUpdater.MyTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests for TestWebUpdater.MyTestCase.test_download" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Develop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,34 +332,20 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for TestWebUpdater.MyTestCase.test_update" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="Develop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestWebUpdater.MyTestCase.test_update&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for TestUsbUptdaer.MyTestCase" />
-      <item itemvalue="Python tests.Unittests for TestUsbUptdaer.MyTestCase.test_update_sub_folder" />
-      <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase.test_update" />
-      <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase" />
       <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase.test_download" />
+      <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_utc_time" />
+      <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_utc" />
+      <item itemvalue="Python tests.Unittests for TestUsbUptdaer.MyTestCase.test_update_sub_folder" />
+      <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_read_write_string_date" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for TestUsbUptdaer.MyTestCase" />
-        <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase" />
-        <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase.test_download" />
-        <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase.test_update" />
+        <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_utc" />
+        <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_read_write_string_date" />
         <item itemvalue="Python tests.Unittests for TestUsbUptdaer.MyTestCase.test_update_sub_folder" />
+        <item itemvalue="Python tests.Unittests for TestWebUpdater.MyTestCase.test_download" />
+        <item itemvalue="Python tests.Unittests for CommonTest.MyTestCase.test_utc_time" />
       </list>
     </recent_temporary>
   </component>
@@ -303,48 +363,47 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase - 2018.10.30 at 20h 38m 52s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 21m 10s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_download - 2018.10.30 at 20h 39m 38s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_download" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 22m 21s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_update - 2018.10.30 at 20h 40m 06s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_update" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_read_write_string_date - 2018.11.01 at 18h 43m 46s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_read_write_string_date" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_update - 2018.10.30 at 20h 42m 33s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_update" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 46m 02s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_update - 2018.10.30 at 20h 43m 02s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_update" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 46m 24s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestUsbUptdaer_MyTestCase_test_update_sub_folder - 2018.10.30 at 20h 43m 11s.xml">
-      <configuration name="Unittests for TestUsbUptdaer.MyTestCase.test_update_sub_folder" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 46m 52s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_update - 2018.10.30 at 20h 43m 45s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_update" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 47m 06s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase_test_download - 2018.10.30 at 20h 44m 07s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase.test_download" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 48m 29s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestWebUpdater_MyTestCase - 2018.10.30 at 20h 46m 36s.xml">
-      <configuration name="Unittests for TestWebUpdater.MyTestCase" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 48m 35s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_TestUsbUptdaer_MyTestCase - 2018.10.30 at 20h 51m 01s.xml">
-      <configuration name="Unittests for TestUsbUptdaer.MyTestCase" configurationId="tests" />
+    <history-entry file="Unittests_for_CommonTest_MyTestCase_test_utc - 2018.11.01 at 18h 48m 48s.xml">
+      <configuration name="Unittests for CommonTest.MyTestCase.test_utc" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15521796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24857143" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35142857" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24752475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3493635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -378,13 +437,56 @@
           <line>164</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CommonTest.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Common.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_updater.py</url>
+          <line>225</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TestWebUpdater.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/web_updater.py</url>
+          <line>200</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CommonTest.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/update_server.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestWebUpdater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestUsbUptdaer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="52">
           <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -392,41 +494,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestWebUpdater.py">
+    <entry file="file://$PROJECT_DIR$/Common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="486">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="43" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1541089716866" expanded="true" signature="155:156" ph="..." />
+            <marker date="1541089716866" expanded="true" signature="307:308" ph="..." />
+            <marker date="1541089716866" expanded="true" signature="822:823" ph="..." />
+            <marker date="1541089716866" expanded="true" signature="978:979" ph="..." />
+            <marker date="1541089716866" expanded="true" signature="1451:1634" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10047">
-          <caret line="604" selection-start-line="604" selection-end-line="604" />
+        <state relative-caret-position="221">
+          <caret line="609" column="29" lean-forward="true" selection-start-line="609" selection-start-column="29" selection-end-line="609" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usb_updater.py">
+    <entry file="file://$PROJECT_DIR$/CommonTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="209">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/printer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_updater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1897">
-          <caret line="228" column="66" selection-start-line="228" selection-start-column="53" selection-end-line="228" selection-end-column="66" />
+        <state relative-caret-position="1263">
+          <caret line="228" column="32" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usb_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infopanel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="-2888">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
