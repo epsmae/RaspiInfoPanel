@@ -1,0 +1,11 @@
+sudo apt-get install python-requests
+
+import requests
+ImportError: No module named requests
+sudo apt-get install python-requests
+sudo apt-get install python3-requests
+
+updater.py replace
+product = name_file.readline().replace('\n', '').replace('\r', '')
+
+fix exceptions not displayed correct
