@@ -74,13 +74,13 @@ def check_and_download(zip_extract_folder):
     json_data = open(version_info_path)
     data = json.load(json_data)
 
-    version = data["product"][product]["Version"]
+    version = data["Product"][product]["Version"]
     display_info("version: " + version)
 
-    version_date = data["product"][product]["Datum"]
+    version_date = data["Product"][product]["Datum"]
     display_info("version date: " + version_date)
 
-    video_url = data["product"][product]["Url"]
+    video_url = data["Product"][product]["Url"]
 
     display_info("url: " + video_url)
     json_data.close()
@@ -96,7 +96,7 @@ def check_and_download(zip_extract_folder):
     # check if version is newer
     if date_time_obj > current_date_time_obj:
         display_info("do update")
-        display_info("dowloading zip")
+        display_info("dowloading zip from: " )
 
         file_request = get_request(video_url, username, password)
 
@@ -138,12 +138,12 @@ def check_for_update(zip_extract_folder):
         # get product name
         with open(name_file_path, 'r') as name_file:
             global product
-            product = name_file.readline()
+            product = name_file.readline().replace('\n', '').replace('\r', '')
             display_info("product: " + product)
 
         display_info("get server info")
         with open(server_file_path, 'r') as server_file:
-            url_info = server_file.readline().split()
+            url_info = server_file.readline().replace('\n', '').replace('\r', '').split()
             version_url = url_info[0]
 
             if len(url_info) >= 3:
@@ -160,7 +160,7 @@ def check_for_update(zip_extract_folder):
         display_info("status: " + str(version_request.status_code))
 
         if version_request.status_code != 200:
-            raise ConnectionError("Failed to get version info, status code: " + str(version_request.status_code))
+            raise requests.ConnectionError("Failed to get version info, status code: " + str(version_request.status_code))
 
         with open(version_info_path, 'wb') as version_info:
             version_info.write(version_request.content)
@@ -169,13 +169,13 @@ def check_for_update(zip_extract_folder):
         json_data = open(version_info_path)
         data = json.load(json_data)
 
-        version = data["product"][product]["Version"]
+        version = data["Product"][product]["Version"]
         display_info("version: " + version)
 
-        version_date = data["product"][product]["Datum"]
+        version_date = data["Product"][product]["Datum"]
         display_info("version date: " + version_date)
 
-        video_url = data["product"][product]["Url"]
+        video_url = data["Product"][product]["Url"]
 
         display_info("url: " + video_url)
         json_data.close()
@@ -213,7 +213,7 @@ def download_update(zip_extract_folder, info):
         file_request = get_request(info.file_path, info.user_name, info.password)
 
         if file_request.status_code != 200:
-            raise ConnectionError("Failed to download video, status code: " + str(file_request.status_code))
+            raise requests.ConnectionError("Failed to download video, status code: " + str(file_request.status_code))
 
         with open(zip_file_path, 'wb') as zipFile:
             zipFile.write(file_request.content)
